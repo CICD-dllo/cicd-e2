@@ -47,3 +47,13 @@ def test_index_post_invalid_numbers(client):
     response = client.post('/', data={'num1': 'a', 'num2': 'b', 'operacion': 'sumar'})
     assert response.status_code == 200
     assert b'Error: Introduce n\xc3\xbameros v\xc3\xa1lidos' in response.data
+
+def test_health_endpoint(client):
+    """
+    Prueba el endpoint de healthcheck.
+    Verifica que el endpoint /health 
+    responda con estado 200 y el mensaje 'OK'.
+    """
+    response = client.get('/health')
+    assert response.status_code == 200
+    assert b'OK' in response.data
