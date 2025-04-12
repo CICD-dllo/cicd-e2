@@ -61,12 +61,14 @@ def index():
 
     return render_template("index.html", resultado=resultado)
 
+
 @app.route("/health")
 def health():
     """
     Endpoint de verificación de salud.
     """
     return "OK", 200
+
 
 if __name__ == "__main__":  # pragma: no cover
     # Quita debug=True para producción
