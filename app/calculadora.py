@@ -12,6 +12,7 @@ Todas las funciones aceptan números de punto flotante como entrada y devuelven
 el resultado como un número de punto flotante.
 """
 
+
 def sumar(a, b):
     """
     Realiza la suma de dos números.
