@@ -2,14 +2,15 @@
 """
 Módulo que contiene las operaciones básicas de una calculadora.
 
-Este módulo proporciona funciones para realizar operaciones matemáticas básicas:
+Este módulo proporciona funciones para realizar operaciones matemáticas
+básicas:
 - Suma
 - Resta
 - Multiplicación
 - División
 
-Todas las funciones aceptan números de punto flotante como entrada y devuelven
-el resultado como un número de punto flotante.
+Todas las funciones aceptan números de punto flotante como entrada y
+devuelven el resultado como un número de punto flotante.
 """
 
 
